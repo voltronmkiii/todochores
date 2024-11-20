@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Harian</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List Harian</h1>
+        <div id="celebration" class="celebration hidden">
+            <div class="celebration-content">
+                <h2>🎉 Kamu Hebat! 🎉</h2>
+                <p>Semua tugas hari ini selesai!</p>
+            </div>
+        </div>
+        <div id="deleteBar" class="delete-bar hidden">
+            <div class="delete-bar-left">
+                <input type="checkbox" id="toggleAll" class="toggle-all-checkbox">
+                <span id="selectedCount">0 item dipilih</span>
+            </div>
+            <button id="deleteSelected" class="delete-selected-btn">Hapus Item Terpilih</button>
+        </div>
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Tambah tugas baru...">
+            <button onclick="addTask()">Tambah</button>
+        </div>
+        <ul id="taskList" class="task-list">
+            <!-- Tasks will be added here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
